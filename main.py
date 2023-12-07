@@ -11,13 +11,14 @@ print(food.get_balance())
 clothing = budget.Category("Clothing")
 food.transfer(50, clothing)
 clothing.withdraw(25.55)
-clothing.withdraw(100)
+clothing.withdraw(100)  # not enough to withdraw
 auto = budget.Category("Auto")
 auto.deposit(1000, "initial deposit")
 auto.withdraw(15)
 
 print(food)
 print(clothing)
+print(auto)
 
 print(create_spend_chart([food, clothing, auto]))
 
